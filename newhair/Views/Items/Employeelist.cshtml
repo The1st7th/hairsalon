@@ -1,0 +1,7 @@
+@if(Model != null){
+  @foreach(var item in Model)
+  {
+  <li><a href="/employeelist/@item.GetId()">@item.Getname()</a> </li>
+
+  }
+  }

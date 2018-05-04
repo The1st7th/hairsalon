@@ -1,0 +1,15 @@
+<h1>Customer List</h1>
+<ul>
+@if(Model != null){
+  @foreach(var item in Model)
+  {
+  <li>@item.GetId() @item.Getname() @item.Getstylist() <a href="/items/delete/@item.GetId()">delete item</a> </li>
+
+  }
+  }
+</ul>
+<p><a href="/customers/new">Add a new customer.</a></p>
+<p><a href="/newemployee">Add new employee.</a></p>
+<p><a href="/seeemployees">employee list/employee customer list</a></p>
+
+
